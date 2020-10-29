@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css?family=Acme" );
+@media only screen and (min-width: 650px) {
+    .eachrow{
+        margin-bottom: 20px;
+    }
+    .page{
+        margin-top: 20px;
+        text-align: right;
+    }
+    .tab2 {
+        height: 100%;
+    }
+    .tab2 .ant-card{
+        background-color: rgb(204, 199, 199);
+        border-radius: 8px;
+        width: 100px;
+        height: 150px;
+    }
+    .tab2 .ant-card-head-title, .tab2 .ant-card-body{
+        color: black;
+        font-family: "Acme", sans-serif;
+    }
+    .tab2 .ant-card-head-title{
+        font-size: 17px;
+    }
+    .tab2 .ant-calendar-picker-input{
+        background-color: antiquewhite;
+    }
+    .tab2 .buttons{
+        text-align: center;
+        
+    }
+    .buttons .but1, .buttons .but2{
+        margin-top: 5px;
+        margin-right: 5px;
+        background-color: antiquewhite;
+        width : 80px;
+        text-align: center;
+    }
+    .buttons .but1:hover, .buttons .but2:hover{
+        background-color: rgb(231, 190, 136);
+        border-color: rgb(231, 190, 136);
+        color:green;
+    }
+    .tab2 .ant-input{
+        background-color: antiquewhite;
+    }
+    .tab2 .ant-input{
+        border-color: rgb(201, 180, 152);
+    }
+    .tab2 .ant-input:hover{
+        border-color: rgb(189, 159, 119);
+    }
+    .tab2 .buttons .ant-modal-wrap{
+        background: whitesmoke;
+    }
+    .finish, .task{
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    .tododate, .todocontent{
+        margin-left: 4px; 
+    }
+
+    .tab2 .anticon-check-square, .tab2 .anticon-delete{
+        font-size: 26px;
+        margin-right: 5px;
+    }
+    .tab2 .anticon-edit{
+        font-size: 15px;
+
+    }
+
+    .tab2 .anticon-check-square:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+        color:green;
+    }
+
+    .tab2 .anticon-delete:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+        color:orangered;
+    }
+
+    .tab2 .anticon-edit:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+        color:green;
+    }
+
+    .tab2 .buttons .changedate{
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .eachrow{
+        margin-bottom: 20px;
+    }
+    .page{
+        margin-top: 20px;
+        text-align: right;
+    }
+    .tab2 {
+        height: 100%;
+    }
+    .tab2 .ant-card{
+        background-color: rgb(204, 199, 199);
+        border-radius: 8px;
+    }
+    .tab2 .ant-card-head-title, .tab2 .ant-card-body{
+        color: black;
+        font-family: "Acme", sans-serif;
+    }
+    .tab2 .ant-card-head-title{
+        font-size: 17px;
+    }
+    .tab2 .ant-calendar-picker-input{
+        background-color: antiquewhite;
+    }
+    .tab2 .buttons{
+        text-align: center;
+        
+    }
+    .buttons .but1, .buttons .but2{
+        margin-top: 5px;
+        margin-right: 5px;
+        background-color: antiquewhite;
+        width : 80px;
+        text-align: center;
+    }
+    .buttons .but1:hover, .buttons .but2:hover{
+        background-color: rgb(231, 190, 136);
+        border-color: rgb(231, 190, 136);
+        color:green;
+    }
+    .tab2 .ant-input{
+        background-color: antiquewhite;
+    }
+    .tab2 .ant-input{
+        border-color: rgb(201, 180, 152);
+    }
+    .tab2 .ant-input:hover{
+        border-color: rgb(189, 159, 119);
+    }
+    .tab2 .buttons .ant-modal-wrap{
+        background: whitesmoke;
+    }
+    .finish, .task{
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .tododate, .todocontent{
+        margin-left: 4px; 
+    }
+    
+    .tab2 .anticon-check-square, .tab2 .anticon-delete{
+        font-size: 26px;
+        margin-right: 5px;
+    }
+    .tab2 .anticon-edit{
+        font-size: 15px;
+    
+    }
+    
+    .tab2 .anticon-check-square:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+        color:green;
+    }
+    
+    .tab2 .anticon-delete:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+        color:orangered;
+    }
+    
+    .tab2 .anticon-edit:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+        color:green;
+    }
+    
+    .tab2 .buttons .changedate{
+        margin-bottom: 15px;
+    }
+
+    .tab2 .ant-card{
+        width: 280px;
+    }
+
+    
+}

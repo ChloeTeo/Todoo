@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Anton");
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+@media screen and (min-width: 640px){
+    .header {
+        background-color: whitesmoke;
+        border-bottom: 1px solid;
+    }
+
+    .bigTitle{
+        font-family: 'Anton',sans-serif;
+        color: rgb(36, 129, 86);
+        font-size: 30pt;
+        float:left;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+
+    .bigTitle:hover{
+        cursor: pointer;
+    }
+
+    .slogan{
+        font-family:  'Shadows Into Light', cursive;
+        font-size: 15pt;
+        margin-top: 13px;
+    }
+
+    .userprofile{
+        text-decoration: none;
+        margin-right: 20px;
+        margin-left: 480px;
+        margin-top:9px;
+        color:black;
+    }
+
+    .logout{
+        text-decoration: none;
+        margin-top: 19px;
+        color:black;
+    }
+
+    .userprofile:hover, .logout:hover{
+        text-decoration: none;
+        color:rgb(36, 129, 86);
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 641px){ 
+    .header {
+        background-color: whitesmoke;
+        border-bottom: 1px solid;
+    }
+   
+    .bigTitle{
+        font-family: 'Anton',sans-serif;
+        color: rgb(36, 129, 86);
+        font-size: 23pt;
+        float:left;
+        margin-right: 5px;
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+
+    .bigTitle:hover{
+        cursor: pointer;
+    }
+
+    .slogan{
+        font-family:  'Shadows Into Light', cursive;
+        font-size:10px; margin-top:5%;
+    }
+
+    .userprofile{
+        text-decoration: none;
+        margin-right: 8px;
+        margin-left: -2px;
+        margin-bottom:15px;
+        color:black;
+    }
+    #buttons .anticon-user{
+        font-size: 25px;
+    }
+    .logout{
+        text-decoration: none;
+        margin-top: 19px;
+        color:black;
+        
+    }
+
+    .userprofile:hover, .logout:hover{
+        text-decoration: none;
+        color:rgb(36, 129, 86);
+    }
+    #buttons{
+        width: 50%;
+    }
+    .userIcon .logoutIcon{
+        display: none;
+    }
+    #buttons a{
+        font-size: 10pt;
+    }
+   
+    
+}
+

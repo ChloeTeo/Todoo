@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css?family=Anton");
+@media only screen and (min-width: 650px) {
+  .mainPage{
+    min-height: 100%;
+    background-color: whitesmoke;
+    padding-left: 13%;
+    padding-right: 10%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    width: 100%;
+    position: relative;
+  }
+
+  .wrapper{
+    height: 100vh;
+  }
+
+  .list{
+    margin-left: 150px;
+  }
+  .ant-tabs-tab-active{
+    color: green;
+  }
+  .ant-tabs-tab:hover{
+    color:black;
+  }
+  .ant-tabs-nav {
+    color: green;
+  }
+  .labelling{
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .Title{
+    font-family: 'Anton','sans-serif';
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color:black;
+    text-align: center;
+  }
+
+  .tab1 p{
+    color: white;
+    
+  }
+  .tab1 .ant-input{
+    margin-bottom: 5px;
+    font-family: 'Anton','sans-serif';
+    font-size: 17px;
+    height: 50px;
+    width: 100%;
+    border-color: black;
+  }
+
+  .tab1 .ant-input:hover{
+    border-color: rgb(180, 146, 101);
+  }
+  .tab1 .ant-calendar-picker-input{
+    width: 100%;
+    text-align: start;
+    background-color: antiquewhite;
+  
+  }
+
+  .tab1 .ant-card-body{
+    background-color:rgb(204, 199, 199);
+    border-radius: 8px;
+    border: 2px solid gray;
+  }
+
+  .tab1 .input1{
+    width: 70%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .tab1 .calendar{
+    width: 80%;
+  }
+
+  .add{
+    width: 150px;
+    height: 50px;
+    border:none;
+    background-color: rgb(114, 111, 111);
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .add:hover{
+    background-color:rgb(104, 101, 101);
+    color: rgb(18, 46, 18);
+  }
+
+  .tab1{
+    margin-top: 20px;
+  }
+
+  .tab1 .ant-input:focus{
+    outline:none;
+  }
+  .tab1{
+    height:520px;
+  }
+  .going{
+    height: 100%;
+    margin-bottom:20px;
+  }
+  .complete{
+    height: 500px;
+  }
+  .meta {
+    width: 100;
+    height: 150;
+  }
+}
+
+@media only screen and (max-width: 600px) { 
+  .mainPage{
+    min-height: 100%;
+    background-color: whitesmoke;
+    padding-left: 13%;
+    padding-right: 10%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    width: 100%;
+    position: relative;
+  }
+
+  .wrapper{
+    height: 100vh;
+  }
+
+  .list{
+    margin-left: 150px;
+  }
+  .ant-tabs-tab-active{
+    color: green;
+  }
+  .ant-tabs-tab:hover{
+    color:black;
+  }
+  .ant-tabs-nav {
+    color: green;
+  }
+  .labelling{
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .Title{
+    font-family: 'Anton','sans-serif';
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color:black;
+    text-align: center;
+  }
+
+  .tab1 p{
+    color: white;
+    
+  }
+  .tab1 .ant-input-affix-wrapper{
+    margin-bottom: 5px;
+    font-family: 'Anton','sans-serif';
+    font-size: 10px;
+    height: 35px;
+    width: 100%;
+    border-color: black;
+    background-color: antiquewhite;
+  }
+ 
+  .tab1 .ant-input{
+    background-color: antiquewhite;
+  }
+  .tab1 .ant-input-affix-wrapper:hover{
+    border-color: rgb(180, 146, 101);
+    
+  }
+  .tab1 .ant-picker{
+    width: 100%;
+    text-align: center;
+    background-color: antiquewhite;
+    font-size : 15px;
+  }
+
+  .tab1 .ant-card-body{
+    background-color:rgb(204, 199, 199);
+    border-radius: 8px;
+    border: 1px solid gray;
+    width: 100;
+  }
+
+  .tab1 .input1{
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .tab1 .calendar{
+    width: 10%;
+    margin-left: 20px;
+  }
+
+  .add{
+    width: 100px;
+    height: 30px;
+    border:none;
+    background-color: rgb(114, 111, 111);
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left:50px;
+    font-size: 12px;
+  }
+  .add:hover{
+    background-color:rgb(104, 101, 101);
+    color: rgb(18, 46, 18);
+  }
+
+  .tab1{
+    margin-top: 20px;
+  }
+
+  .tab1 .ant-input:focus{
+    outline:none;
+  }
+  .tab1{
+    height: 420px;
+  }
+  .going{
+    height: 100%;
+    margin-bottom:20px;
+  }
+  .complete{
+    height: 500px;
+  }
+  .meta {
+    width: 100;
+    height: 150;
+  }
+
+  .mainpage .ants-tabs-tab{
+    size: small;
+  }
+  
+  .complete .ant-table{
+    font-size: 13px;
+  }
+
+}
