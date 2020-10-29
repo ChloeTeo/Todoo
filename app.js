@@ -6,7 +6,6 @@ var logger = require('morgan');
 var cors = require("cors");
 var indexRouter = require('./routes/index');
 var todoRouter = require('./routes/todo');
-var testAPIRouter = require('./routes/testAPI');
 var app = express();
 
 // view engine setup
@@ -28,7 +27,6 @@ if (process.env.NODE_ENV === 'production') {
 
 app.use('/', indexRouter);
 app.use('/todo', todoRouter);
-app.use('/testAPI', testAPIRouter);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
