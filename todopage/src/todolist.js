@@ -78,7 +78,7 @@ class todoList extends React.Component{
   
   }
   callAPI(){
-    var link = '/todo/getTodo';
+    var link = `${process.env.REACT_APP_API}/todo/getTodo`;
     axios({
       method: 'get',
       url: link
@@ -107,7 +107,7 @@ class todoList extends React.Component{
  
 
   componentDidMount(){
-    var link = '/todo/getTodo';
+    var link = `${process.env.REACT_APP_API}/todo/getTodo`;
     axios({
       method: 'GET',
       url: link
