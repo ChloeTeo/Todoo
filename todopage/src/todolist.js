@@ -78,7 +78,7 @@ class todoList extends React.Component{
   
   }
   callAPI(){
-    var link = 'http://localhost:9000/todo/getTodo';
+    var link = '/todo/getTodo';
     axios({
       method: 'get',
       url: link
@@ -107,7 +107,7 @@ class todoList extends React.Component{
  
 
   componentDidMount(){
-    var link = 'http://localhost:9000/todo/getTodo';
+    var link = '/todo/getTodo';
     axios({
       method: 'GET',
       url: link
@@ -115,7 +115,7 @@ class todoList extends React.Component{
     .then(response => this.setState({data:response.data},() => {this.update()}))
     .catch(function(error)
     {
-        alert(error.message + "Is here");
+        alert(error.message);
     });
     }
   
