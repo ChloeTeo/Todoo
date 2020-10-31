@@ -15,12 +15,20 @@ app.use(cors());
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, '../public')));
-
-
 
 app.use('/', indexRouter);
 app.use('/todo', todoRouter);
+
+app.use(express.static(path.join(__dirname, '../public')));
+
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, '/todopage/build'))),
+
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, '/todopage/build', 'index.html')) // relative path
+  })
+}
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
@@ -37,12 +45,5 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '/todopage/build'))),
-
-  app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '/todopage/build', 'index.html')) // relative path
-  })
-}
 
 module.exports = app;
