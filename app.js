@@ -17,13 +17,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, '../public')));
 
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '/todopage/build'))),
 
-  app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '/todopage/build', 'index.html')) // relative path
-  })
-}
 
 app.use('/', indexRouter);
 app.use('/todo', todoRouter);
@@ -42,5 +36,13 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname))),
+
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, '/todopage/build', 'index.html')) // relative path
+  })
+}
 
 module.exports = app;
