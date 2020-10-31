@@ -4,7 +4,7 @@ var path = require('path');
 var logger = require('morgan');
 
 var cors = require("cors");
-var indexRouter = require('./routes/index');
+//var indexRouter = require('./routes/index');
 var todoRouter = require('./routes/todo');
 var app = express();
 
@@ -26,7 +26,7 @@ if (process.env.NODE_ENV === 'production') {
   })*/
 }
 
-app.use('/', indexRouter);
+//app.use('/', indexRouter);
 app.use('/todo', todoRouter);
 
 
