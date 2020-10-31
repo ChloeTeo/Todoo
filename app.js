@@ -38,10 +38,10 @@ app.use(function(err, req, res, next) {
 });
 
 if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname))),
+  app.use(express.static(path.join(__dirname, '/todopage/build'))),
 
   app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '/todopage/build', 'index.html')) // relative path
+    res.sendFile(path.resolve(__dirname, '../todopage/build', 'index.html')) // relative path
   })
 }
 
