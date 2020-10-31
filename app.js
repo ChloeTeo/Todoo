@@ -4,7 +4,6 @@ var path = require('path');
 var logger = require('morgan');
 
 var cors = require("cors");
-//var indexRouter = require('./routes/index');
 var todoRouter = require('./routes/todo');
 var app = express();
 
@@ -21,15 +20,9 @@ app.use(express.static(path.join(__dirname, '../public')));
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '/todopage/build')))
 
-  /*app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '/todopage/build', 'index.html')) // relative path
-  })*/
 }
 
-//app.use('/', indexRouter);
 app.use('/todo', todoRouter);
-
-
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

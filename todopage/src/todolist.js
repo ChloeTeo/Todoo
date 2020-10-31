@@ -124,7 +124,7 @@ class todoList extends React.Component{
       message.warning("Please fill up every blank.")
     }
     else{
-      var link = 'http://localhost:9000/todo/addTodo';
+      var link = '/todo/addTodo';
       var beforeSend = {
         data : {
           date : this.state.date,

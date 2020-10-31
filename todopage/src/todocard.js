@@ -61,7 +61,7 @@ class todoCard extends React.Component{
 
     //complete the task, thus send value to backend to set complete state, and rerender
     tocomplete(d){
-      var link = 'http://localhost:9000/todo/setComplete';
+      var link = '/todo/setComplete';
       axios({
         method: 'post',
         url: link,
@@ -78,7 +78,7 @@ class todoCard extends React.Component{
 
     //to delete the task, send it to backend to delete it from database, thus rerender
     todelete(id){
-      var link = 'http://localhost:9000/todo/toDelete';
+      var link = '/todo/toDelete';
       axios({
         method: 'post',
         url: link,
@@ -119,14 +119,14 @@ class todoCard extends React.Component{
     //Submit button is clicked for edit popup, thus change database value and call rerender
     handleOk(type) {
       if(type === "task"){
-        var link = 'http://localhost:9000/todo/edittaskTodo';
+        var link = '/todo/edittaskTodo';
         var tosend =  {
           id : this.state.clickedID,
           todo : this.state.task,
         }
       }
       else{
-        var link = 'http://localhost:9000/todo/editdateTodo';
+        var link = '/todo/editdateTodo';
         var tosend =  {
           id : this.state.clickedID,
           date : this.state.date,
