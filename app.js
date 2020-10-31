@@ -16,9 +16,6 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use('/', indexRouter);
-app.use('/todo', todoRouter);
-
 app.use(express.static(path.join(__dirname, '../public')));
 
 if (process.env.NODE_ENV === 'production') {
@@ -28,6 +25,10 @@ if (process.env.NODE_ENV === 'production') {
     res.sendFile(path.resolve(__dirname, '/todopage/build', 'index.html')) // relative path
   })
 }
+app.use('/', indexRouter);
+app.use('/todo', todoRouter);
+
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
