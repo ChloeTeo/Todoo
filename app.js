@@ -4,8 +4,8 @@ var path = require('path');
 var logger = require('morgan');
 
 var cors = require("cors");
-var indexRouter = require('/routes/index');
-var todoRouter = require('/routes/todo');
+var indexRouter = require('./routes/index');
+var todoRouter = require('./routes/todo');
 var app = express();
 
 // view engine setup
