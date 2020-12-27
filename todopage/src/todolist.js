@@ -46,10 +46,10 @@ class todoList extends React.Component{
   }
   update(){
     var length = this.state.data.length;
-    var afterLen = this.state.data.length;
     var newdata = [];
     var arr = [];
     var checkNum = 0;
+    var dataLens = 0;
     var compCheckIndex = 0;
     var arrHasThree = 0;
     var compdata = [];
@@ -57,10 +57,14 @@ class todoList extends React.Component{
       if(this.state.data[i].complete === "false"){
         arr.push(this.state.data[i]);
         checkNum++;
+        dataLens++;
         if(checkNum === arrHasThree + 3){
           arrHasThree = checkNum;
           newdata.push(Array.from(arr));
           arr = [];
+        }
+        if(i === length-1){
+          newdata.push(Array.from(arr))
         }
       }
       if(this.state.data[i].complete === "true"){
@@ -69,12 +73,9 @@ class todoList extends React.Component{
         keyadd.key = String(compCheckIndex);
         compdata.push(keyadd)
       }
-      if(i === length - 1){
-        newdata.push(Array.from(arr));
-      }
      
     }
-   this.setState({data:newdata, dataLen:afterLen, completeData: compdata});
+   this.setState({data:newdata, dataLen:dataLens, completeData: compdata});
   
   }
   callAPI(){
